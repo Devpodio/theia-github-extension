@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "lerna run prepare",
+    "rebuild:browser": "theia rebuild:browser",
+    "rebuild:electron": "theia rebuild:electron",
+    "publish:latest": "lerna publish --registry=https://npm.devpod.io/ --skip-git --force-publish",
+    "publish:next": "lerna publish --registry=https://npm.devpod.io/ --exact --canary=next --npm-tag=next --force-publish --skip-git --yes"
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "workspaces": [
+    "github-extension/*",
+    "browser-app/*",
+    "electron-app/*"
+  ],
+  "dependencies": {
+    "@octokit/rest": "15.2.5"
+  }
+}

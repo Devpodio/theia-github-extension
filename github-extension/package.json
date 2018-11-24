@@ -1,0 +1,37 @@
+{
+  "name": "@devpodio/github-extension",
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "Apache-2.0",
+  "version": "0.4.0-alpha.1",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@theia/core": "next",
+    "@theia/git": "next",
+    "@theia/userstorage": "next"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/github-frontend-module",
+      "backend": "lib/node/github-backend-module"
+    }
+  ]
+}
