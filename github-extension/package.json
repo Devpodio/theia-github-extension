@@ -14,8 +14,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@theia/core": "next",
-    "@theia/git": "next",
+    "@theia/core": "0.6.0",
+    "@theia/git": "0.6.0",
     "@theia/userstorage": "next"
   },
   "devDependencies": {
