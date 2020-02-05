@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@theia/core": "next",
-    "@theia/git": "next",
+    "@theia/git": "0.4.0",
     "@theia/userstorage": "next"
   },
   "devDependencies": {
