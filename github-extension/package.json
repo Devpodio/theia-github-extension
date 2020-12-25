@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@theia/core": "next",
-    "@theia/git": "next",
-    "@theia/userstorage": "next"
+    "@theia/git": "1.0.0",
+    "@theia/userstorage": "0.4.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",
