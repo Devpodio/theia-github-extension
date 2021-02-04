@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@devpodio/github-extension": "^1.0.0",
-    "@theia/core": "0.4.0-next.9555e098",
+    "@theia/core": "0.6.0",
     "@theia/editor": "0.4.0-next.9555e098",
     "@theia/filesystem": "0.4.0-next.9555e098",
     "@theia/languages": "0.4.0-next.9555e098",
@@ -12,9 +12,9 @@
     "@theia/messages": "0.4.0-next.9555e098",
     "@theia/monaco": "0.4.0-next.9555e098",
     "@theia/navigator": "0.4.0-next.9555e098",
-    "@theia/preferences": "0.4.0-next.9555e098",
+    "@theia/preferences": "1.0.0",
     "@theia/process": "0.4.0-next.9555e098",
-    "@theia/terminal": "0.4.0-next.9555e098",
+    "@theia/terminal": "1.0.0",
     "@theia/typescript": "0.4.0-next.9555e098",
     "@theia/workspace": "0.4.0-next.9555e098"
   },
