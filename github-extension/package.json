@@ -14,9 +14,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@theia/core": "next",
+    "@theia/core": "0.4.0",
     "@theia/git": "next",
-    "@theia/userstorage": "next"
+    "@theia/userstorage": "0.4.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.2",

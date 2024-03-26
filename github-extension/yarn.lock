@@ -135,7 +135,68 @@
     semver "^5.4.1"
     write-json-file "^2.2.0"
 
-"@theia/core@0.4.0-next.93c16bb9", "@theia/core@next":
+"@theia/application-package@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@theia/application-package/-/application-package-0.4.0.tgz#7a7eed427c9975fedb204129490b39dcaca8af44"
+  integrity sha512-xtUshYOMltxinDTd5jQW0j7zULA//3ndknfhiWuC9aW22h56JM+pY9cdnt9jbTQn0XXyvgq1xiszEQJZ6/cNXA==
+  dependencies:
+    "@types/fs-extra" "^4.0.2"
+    "@types/request" "^2.0.3"
+    "@types/semver" "^5.4.0"
+    "@types/write-json-file" "^2.2.1"
+    changes-stream "^2.2.0"
+    fs-extra "^4.0.2"
+    is-electron "^2.1.0"
+    request "^2.82.0"
+    semver "^5.4.1"
+    write-json-file "^2.2.0"
+
+"@theia/core@0.4.0", "@theia/core@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@theia/core/-/core-0.4.0.tgz#4417b6d755875189be10f6552df0988152a4d325"
+  integrity sha512-KWU1N3d4uPI1tsCe3p3Mu/plyU42alImujupNzut30KY/qI2+PS9yxUfQOblzyq93hiqx8iBamFdqy3x+aubZw==
+  dependencies:
+    "@phosphor/widgets" "^1.5.0"
+    "@theia/application-package" "^0.4.0"
+    "@types/body-parser" "^1.16.4"
+    "@types/bunyan" "^1.8.0"
+    "@types/express" "^4.16.0"
+    "@types/lodash.debounce" "4.0.3"
+    "@types/lodash.throttle" "^4.1.3"
+    "@types/react" "^16.4.1"
+    "@types/react-dom" "^16.0.6"
+    "@types/react-virtualized" "^9.18.3"
+    "@types/route-parser" "^0.1.1"
+    "@types/ws" "^5.1.2"
+    "@types/yargs" "^11.1.0"
+    ajv "^6.5.3"
+    body-parser "^1.17.2"
+    electron "^2.0.14"
+    electron-store "^2.0.0"
+    es6-promise "^4.2.4"
+    express "^4.16.3"
+    file-icons-js "^1.0.3"
+    fix-path "^2.1.0"
+    font-awesome "^4.7.0"
+    fuzzy "^0.1.3"
+    inversify "^4.14.0"
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+    perfect-scrollbar "^1.3.0"
+    react "^16.4.1"
+    react-dom "^16.4.1"
+    react-virtualized "^9.20.0"
+    reconnecting-websocket "^3.0.7"
+    reflect-metadata "^0.1.10"
+    route-parser "^0.0.5"
+    vscode-languageserver-types "^3.10.0"
+    vscode-nsfw "^1.0.17"
+    vscode-uri "^1.0.1"
+    vscode-ws-jsonrpc "^0.0.2-1"
+    ws "^5.2.2"
+    yargs "^11.1.0"
+
+"@theia/core@0.4.0-next.93c16bb9":
   version "0.4.0-next.93c16bb9"
   resolved "https://registry.yarnpkg.com/@theia/core/-/core-0.4.0-next.93c16bb9.tgz#d478ae2ba604d41552119da09f0bd88cf81ff8c3"
   integrity sha512-XQavbWixDAINvOVMaQeNtlWzuiSAbGykxkTrFyCAvR52cF5Nq+6aO+ylFmCLoFWG3sXqo6zKku45JmrEi01zHQ==
@@ -196,6 +257,35 @@
   integrity sha512-ngq1TUEDLU+SaE5lB5xAmtlraViq9Rf6UNej97gUosQqt1nNPNFfTTPWGsm6l0fK6eUexe96r5Op1fOrlxd7TA==
   dependencies:
     "@theia/core" "0.4.0-next.93c16bb9"
+    "@types/base64-js" "^1.2.5"
+    "@types/body-parser" "^1.17.0"
+    "@types/fs-extra" "^4.0.2"
+    "@types/mime-types" "^2.1.0"
+    "@types/rimraf" "^2.0.2"
+    "@types/tar-fs" "^1.16.1"
+    "@types/touch" "0.0.1"
+    "@types/uuid" "^3.4.3"
+    base64-js "^1.2.1"
+    body-parser "^1.18.3"
+    drivelist "^6.4.3"
+    fs-extra "^4.0.2"
+    http-status-codes "^1.3.0"
+    mime-types "^2.1.18"
+    minimatch "^3.0.4"
+    mv "^2.1.1"
+    rimraf "^2.6.2"
+    tar-fs "^1.16.2"
+    touch "^3.1.0"
+    trash "^4.0.1"
+    uuid "^3.2.1"
+    zip-dir "^1.0.2"
+
+"@theia/filesystem@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@theia/filesystem/-/filesystem-0.4.0.tgz#f26dfc8b76ef2f88e799aa6cabb3923d0f7d3ab7"
+  integrity sha512-+yCWXszw2eJ6NBamQ8QHnXrD8S7lC4xIO9mkahndCwBD0f6w1TuLsFkIZQ07KLDcA+SC2I8ufY8cQOM5imFL0A==
+  dependencies:
+    "@theia/core" "^0.4.0"
     "@types/base64-js" "^1.2.5"
     "@types/body-parser" "^1.17.0"
     "@types/fs-extra" "^4.0.2"
@@ -281,13 +371,13 @@
     node-pty "0.7.6"
     string-argv "^0.1.1"
 
-"@theia/userstorage@next":
-  version "0.4.0-next.93c16bb9"
-  resolved "https://registry.yarnpkg.com/@theia/userstorage/-/userstorage-0.4.0-next.93c16bb9.tgz#3b4152e6b0e60dd880aef45a4819e0365623f585"
-  integrity sha512-Xzs3aeg9LOoZWjk2LEfUp00xvrN6YlPZ4gMRlxE8KuFsZw/PJFCJEaX46EEZyBrZqTxCc7UVkwkrYajEzwVJAw==
+"@theia/userstorage@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@theia/userstorage/-/userstorage-0.4.0.tgz#01b4e65c2e52e11259aec1b9baa7945f98e62ec1"
+  integrity sha512-NDlZwi21KxDIznQ+ZUx0OtvjI9oZsQ2n1saMJDT7bDVrFhzN2DIIWsRnKUWD77Sf1YSSx7RFs6RrKt5bEk7U6A==
   dependencies:
-    "@theia/core" "0.4.0-next.93c16bb9"
-    "@theia/filesystem" "0.4.0-next.93c16bb9"
+    "@theia/core" "^0.4.0"
+    "@theia/filesystem" "^0.4.0"
 
 "@theia/variable-resolver@0.4.0-next.93c16bb9":
   version "0.4.0-next.93c16bb9"
@@ -866,6 +956,17 @@ concat-stream@1.6.2:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+conf@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/conf/-/conf-2.2.0.tgz#ee282efafc1450b61e205372041ad7d866802d9a"
+  integrity sha512-93Kz74FOMo6aWRVpAZsonOdl2I57jKtHrNmxhumehFQw4X8Sk37SohNY11PG7Q8Okta+UnrVaI006WLeyp8/XA==
+  dependencies:
+    dot-prop "^4.1.0"
+    env-paths "^1.0.0"
+    make-dir "^1.0.0"
+    pkg-up "^2.0.0"
+    write-file-atomic "^2.3.0"
+
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
@@ -1047,6 +1148,13 @@ dir-glob@^2.0.0:
   dependencies:
     "@babel/runtime" "^7.1.2"
 
+dot-prop@^4.1.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.1.tgz#45884194a71fc2cda71cbb4bceb3a4dd2f433ba4"
+  integrity sha512-l0p4+mIuJIua0mhxGoh4a+iNL9bmeK5DvnSVQa6T0OhrVmaEa1XScX5Etc673FePCJOArq/4Pa2cLGODUWTPOQ==
+  dependencies:
+    is-obj "^1.0.0"
+
 drivelist@^6.4.3:
   version "6.4.3"
   resolved "https://registry.yarnpkg.com/drivelist/-/drivelist-6.4.3.tgz#b6bf640d26e77ccba2f90c47134bd3b6a34f9709"
@@ -1108,10 +1216,26 @@ electron-download@^3.0.1:
     semver "^5.3.0"
     sumchecker "^1.2.0"
 
+electron-store@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/electron-store/-/electron-store-2.0.0.tgz#1035cca2a95409d1f54c7466606345852450d64a"
+  integrity sha512-1WCFYHsYvZBqDsoaS0Relnz0rd81ZkBAI0Fgx7Nq2UWU77rSNs1qxm4S6uH7TCZ0bV3LQpJFk7id/is/ZgoOPA==
+  dependencies:
+    conf "^2.0.0"
+
 electron@1.8.2-beta.5:
   version "1.8.2-beta.5"
   resolved "https://registry.yarnpkg.com/electron/-/electron-1.8.2-beta.5.tgz#8324c483ed8cb4b052b3e13e514ddc858707fdeb"
   integrity sha1-gyTEg+2MtLBSs+E+UU3chYcH/es=
+  dependencies:
+    "@types/node" "^8.0.24"
+    electron-download "^3.0.1"
+    extract-zip "^1.0.3"
+
+electron@^2.0.14:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-2.0.18.tgz#52f1b248c3cc013b5a870094de3b6ba5de313a0f"
+  integrity sha512-PQRHtFvLxHdJzMMIwTddUtkS+Te/fZIs+PHO+zPmTUTBE76V3Od3WRGzMQwiJHxN679licmCKhJpMyxZfDEVWQ==
   dependencies:
     "@types/node" "^8.0.24"
     electron-download "^3.0.1"
@@ -1128,6 +1252,11 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   integrity sha512-1MkrZNvWTKCaigbn+W15elq2BB/L22nqrSY5DKlo3X6+vclJm8Bb5djXJBmEX6fS3+zCh/F4VBK5Z2KxJt4s2Q==
   dependencies:
     once "^1.4.0"
+
+env-paths@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-1.0.0.tgz#4168133b42bb05c38a35b1ae4397c8298ab369e0"
+  integrity sha512-+6r/UAzikJWJPcQZpBQS+bVmjAMz2BkDP/N4n2Uz1zz8lyw1IHWUeVdh/85gs0dp5A+z76LOQhCZkR6F88mlUw==
 
 error-ex@^1.2.0:
   version "1.3.2"
@@ -1676,6 +1805,11 @@ is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
   integrity sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
+
+is-obj@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  integrity sha512-l4RyHgRqGN4Y3+9JHVrNqO+tN0rV5My76uW5/nuO4K1b6vw5G8d/cmFjP9tRfEsdhZNt0IFdZuK/c2Vr4Nb+Qg==
 
 is-plain-obj@^1.0.0:
   version "1.1.0"
@@ -2303,6 +2437,13 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pkg-up@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  integrity sha512-fjAPuiws93rm7mPUu21RdBnkeZNrbfCFCwfAhPWY+rR3zG0ubpe5cEReHOw5fIbfmsxEV/g2kSxGTATY3Bpnwg==
+  dependencies:
+    find-up "^2.1.0"
 
 prebuild-install@^4.0.0:
   version "4.0.0"
@@ -3176,6 +3317,15 @@ write-file-atomic@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-2.3.0.tgz#1ff61575c2e2a4e8e510d6fa4e243cce183999ab"
   integrity sha512-xuPeK4OdjWqtfi59ylvVL0Yn35SF3zgcAcv7rBPFHVaEapaDr4GdGgm3j7ckTwH9wHL7fGmgfAnb0+THrHb8tA==
+  dependencies:
+    graceful-fs "^4.1.11"
+    imurmurhash "^0.1.4"
+    signal-exit "^3.0.2"
+
+write-file-atomic@^2.3.0:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-2.4.3.tgz#1fd2e9ae1df3e75b8d8c367443c692d4ca81f481"
+  integrity sha512-GaETH5wwsX+GcnzhPgKcKjJ6M2Cq3/iZp1WyY/X1CSqrW+jVNM9Y7D8EC2sM4ZG/V8wZlSniJnCKWPmBYAucRQ==
   dependencies:
     graceful-fs "^4.1.11"
     imurmurhash "^0.1.4"
